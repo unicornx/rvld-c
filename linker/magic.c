@@ -1,4 +1,6 @@
 #include <stdbool.h>
+#include <stdint.h>
+#include <string.h>
 
 bool CheckMagic(const char* contents, int64_t len)
 {
@@ -6,7 +8,7 @@ bool CheckMagic(const char* contents, int64_t len)
     size_t magicSize = sizeof(magic) / sizeof(magic[0]);
 
     if (len < magicSize)
-	return false;
+	    return false;
 
     return memcmp(contents, magic, magicSize) == 0;
 }

@@ -14,4 +14,6 @@ struct InputFile {
     int64_t sectionNum;
 };
 
+struct InputFile* NewInputFile(struct File* file);
+
 #endif // _RVLD_INPUTFILE_H

@@ -1,6 +1,8 @@
 #ifndef _RVLD_ELF_H
 #define _RVLD_ELF_H
 
+#include <stdint.h>
+
 // Elf32_Ehdr Executable header type. One per ELF file.
 struct Ehdr {
     uint8_t Ident[16];      //表示ELF文件的标识信息

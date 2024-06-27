@@ -14,4 +14,4 @@ int main(void) {
 }
 EOF
 
-./rvld "$t"/a.o
+./out/rvld "$t"/a.o
